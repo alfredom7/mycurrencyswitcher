@@ -10,6 +10,7 @@ const ExchangeComponent = () => {
   const [exchangeText, setExchangeText] = useState(
     "Change the price to convert"
   );
+  const [exchangeEffect, setExchangeEffect] = useState(false);
 
   const [usdPrice, setUsdPrice] = useState(0);
   const [eurPrice, setEurPrice] = useState(0);
@@ -20,6 +21,7 @@ const ExchangeComponent = () => {
 
   const getCurrency = () => {
     setLoading(true);
+    setExchangeEffect(false);
 
     if (currencyUpdated == "USD" && price1 < 1) {
       setLoading(false);
@@ -54,6 +56,7 @@ const ExchangeComponent = () => {
             setExchangeText(`You receive ${price1} Dollars of ${price2} Euros`);
           }
           window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          setExchangeEffect(true);
         }
       })
       .catch(function (error) {
@@ -66,7 +69,15 @@ const ExchangeComponent = () => {
 
   return (
     <div className="cs-exchange">
-      <p className="cs-exchange__prices">{exchangeText}</p>
+      <p
+        className={
+          exchangeEffect
+            ? "animate_animated animate__heartBeat cs-exchange__prices"
+            : "cs-exchange__prices"
+        }
+      >
+        {exchangeText}
+      </p>
 
       <div className="cs-exchange__moneygroup">
         <div className="cs-exchange__moneygroup__left">
