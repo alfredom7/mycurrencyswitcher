@@ -6,7 +6,7 @@ import ExchangeComponent from "./components/ExchangeComponent";
 import InfoComponent from "./components/InfoComponent";
 import FooterComponent from "./components/FooterComponent";
 
-function App() {
+function myCsApp() {
   return (
     <>
       <NavbarComponent />
@@ -24,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default myCsApp;
