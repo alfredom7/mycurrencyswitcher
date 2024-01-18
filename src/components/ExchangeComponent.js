@@ -53,6 +53,7 @@ const ExchangeComponent = () => {
             setPrice1((1 - data.EUR + 1) * price2);
             setExchangeText(`You receive ${price1} Dollars of ${price2} Euros`);
           }
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
         }
       })
       .catch(function (error) {

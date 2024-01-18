@@ -4,6 +4,8 @@
 
 Esta aplicación ha sido creada con React versión "18.2.0" y NPM versión "9.8.1".
 
+Se creo para brindar al usuario la posibilidad de convertir el tipo de cambio actual entre dos monedas en este caso USD y EUROS.
+
 Para el despliegue ejecutar los siguientes comandos:
 
 Ubicarse en la carpeta del proyecto
