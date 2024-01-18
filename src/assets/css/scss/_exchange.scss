@@ -1,0 +1,86 @@
+.cs-exchange {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+
+    &__prices {
+        color: $yellow1;
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+    .selected {
+        border: 4px $yellow1 solid;
+        border-radius: 0.5rem;
+        padding: 1px 5px;
+        color: $yellow1;
+        margin-left: 5px;
+    }
+    &__moneygroup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        padding: 40px 0;
+
+        &__middle {
+            &__symbol {
+                background-color: $basecolor;
+                padding: 13px;
+                border-radius: 60px;
+                width: 70px;
+                height: 70px;
+                line-height: 46px;
+                i {
+                    color: white;
+                }
+            }
+        }
+        &__left, &__right {
+            @media(max-width:992px) {
+                width: 100%;
+            }
+        }
+        &__input {
+            max-width: 300px;
+            min-height: 70px;
+            @media(max-width:992px) {
+                max-width: 100%;
+            }
+
+            .input-group-text {
+                background-color: $basecolor !important;
+                color: white;
+                border: none;
+                font-weight: 800;
+            }
+        }
+
+    }
+
+    &__quote {
+        margin-bottom: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &__block {
+            background: $basecolor;
+            border-radius: 0.5rem;
+            max-width: 450px;
+            font-size: 18px;
+            padding: 20px 10px;
+            font-weight: 800;
+
+        }
+
+        i {
+            color: $yellow1;
+            font-size: 18px;
+            padding-right: 8px;
+        }
+    }
+}

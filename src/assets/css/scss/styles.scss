@@ -1,0 +1,30 @@
+$basecolor: #6404b6;
+$secondarycolor: #6647b6;
+$tertiarycolor: #353d47;
+$gray1: #95B2B0;
+$gray2: #C6EBBE;
+$oldgold: #D5B942;
+$citron: #D9D375;
+$yellow1: #ffdd00;
+
+@import "./navbar.scss";
+@import "./mainbox.scss";
+@import "./carouselbox.scss";
+@import "./exchange.scss";
+@import "./info.scss";
+@import "./footer.scss";
+
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.main-container {
+
+    &__bg {
+        background-image: url('../../images/bg2.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,196 @@
+.cs-navbar {
+  background-color: #6404b6 !important;
+  min-height: 80px;
+}
+.cs-navbar a {
+  color: #fff;
+}
+.cs-navbar a.navbar-brand {
+  font-weight: 800;
+}
+.cs-navbar a:hover {
+  color: #ffdd00;
+}
+.cs-navbar .navbar-text {
+  color: #ffdd00;
+  font-weight: 800;
+}
+.cs-navbar .navbar-brand i {
+  color: #ffdd00;
+  padding-right: 5px;
+}
+
+.cs-mainbox {
+  height: 100%;
+}
+
+.cs-carouselbox {
+  min-height: 150px;
+  padding-top: 30px;
+}
+.cs-carouselbox .carousel-caption {
+  position: initial !important;
+}
+
+.cs-exchange {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.cs-exchange__prices {
+  color: #ffdd00;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+.cs-exchange .selected {
+  border: 4px #ffdd00 solid;
+  border-radius: 0.5rem;
+  padding: 1px 5px;
+  color: #ffdd00;
+  margin-left: 5px;
+}
+.cs-exchange__moneygroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 0;
+}
+.cs-exchange__moneygroup__middle__symbol {
+  background-color: #6404b6;
+  padding: 13px;
+  border-radius: 60px;
+  width: 70px;
+  height: 70px;
+  line-height: 46px;
+}
+.cs-exchange__moneygroup__middle__symbol i {
+  color: white;
+}
+@media (max-width: 992px) {
+  .cs-exchange__moneygroup__left, .cs-exchange__moneygroup__right {
+    width: 100%;
+  }
+}
+.cs-exchange__moneygroup__input {
+  max-width: 300px;
+  min-height: 70px;
+}
+@media (max-width: 992px) {
+  .cs-exchange__moneygroup__input {
+    max-width: 100%;
+  }
+}
+.cs-exchange__moneygroup__input .input-group-text {
+  background-color: #6404b6 !important;
+  color: white;
+  border: none;
+  font-weight: 800;
+}
+.cs-exchange__quote {
+  margin-bottom: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cs-exchange__quote__block {
+  background: #6404b6;
+  border-radius: 0.5rem;
+  max-width: 450px;
+  font-size: 18px;
+  padding: 20px 10px;
+  font-weight: 800;
+}
+.cs-exchange__quote i {
+  color: #ffdd00;
+  font-size: 18px;
+  padding-right: 8px;
+}
+
+.cs-info {
+  padding-bottom: 40px !important;
+}
+.cs-info__title {
+  font-size: 28px;
+  font-weight: 800;
+}
+.cs-info__title-separator {
+  border-bottom: 1px #6647b6 solid;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+.cs-info .card .card-body .card-title {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.cs-info .card .card-body .card-title img {
+  width: 50px;
+}
+.cs-info .card .card-body .card-button {
+  background-color: #6404b6;
+  border: none;
+  font-weight: 700;
+}
+.cs-info .card .card-body .card-button i {
+  padding-left: 8px;
+}
+
+.cs-infotools {
+  background-color: #6647b6;
+}
+.cs-infotools__title {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 30px;
+  color: white;
+}
+.cs-infotools__cards .card {
+  border: none;
+}
+.cs-infotools__cards .card .card-header {
+  padding: 30px 0px;
+  background-color: #6404b6;
+}
+.cs-infotools__cards .card .card-header i {
+  color: #ffdd00;
+  font-size: 60px;
+}
+.cs-infotools__cards .card .card-body .card-title {
+  font-size: 20px;
+  font-weight: 800;
+}
+.cs-infotools__cards .card .card-body a {
+  background-color: #6404b6;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cs-footer__title {
+  font-size: 17px;
+  font-weight: 700;
+}
+.cs-footer__title a {
+  color: #6404b6;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+}
+
+.main-container__bg {
+  background-image: url("../../images/bg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}/*# sourceMappingURL=styles.css.map */

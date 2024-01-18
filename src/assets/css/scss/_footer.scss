@@ -1,0 +1,11 @@
+.cs-footer {
+    &__title {
+        font-size: 17px;
+        font-weight: 700;
+
+        a {
+            color: $basecolor;
+            text-decoration: none;
+        }
+    }
+}

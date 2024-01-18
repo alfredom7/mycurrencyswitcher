@@ -1,0 +1,25 @@
+.cs-navbar {
+    background-color: $basecolor !important;
+    min-height: 80px;
+
+    a {
+        color: #fff;
+        &.navbar-brand {
+            font-weight: 800;
+        }
+    }
+    a:hover {
+        color: $yellow1;
+    }
+    .navbar-text {
+        color: $yellow1;
+        font-weight: 800;
+    }
+
+    .navbar-brand {
+        i {
+            color: $yellow1;
+            padding-right: 5px;
+        }
+    }
+}
