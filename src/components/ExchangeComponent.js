@@ -51,11 +51,12 @@ const ExchangeComponent = () => {
           if (currencyUpdated == "USD") {
             setPrice2(data.EUR * price1);
             setExchangeText(`You receive ${price2} Euros of ${price1} Dollars`);
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           } else {
             setPrice1((1 - data.EUR + 1) * price2);
             setExchangeText(`You receive ${price1} Dollars of ${price2} Euros`);
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }
-          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           setExchangeEffect(true);
         }
       })
