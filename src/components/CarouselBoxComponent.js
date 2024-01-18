@@ -15,7 +15,10 @@ const CarouselBoxComponent = () => {
       >
         <div className="carousel-inner">
           {items.map((item, i) => (
-            <div className={i == 0 ? "carousel-item active" : "carousel-item"}>
+            <div
+              className={i == 0 ? "carousel-item active" : "carousel-item"}
+              key={i.toString()}
+            >
               <div className="carousel-caption ">
                 <h2>{item}</h2>
                 <p></p>

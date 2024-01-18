@@ -76,16 +76,16 @@ const InfoComponent = () => {
         </div>
         <div className="cs-infotools__cards container">
           <div className="row">
-            {infoTools.map((it) => (
-              <div className="col-md-4 py-3">
-                <div class="card text-center">
-                  <div class="card-header">
+            {infoTools.map((it, index) => (
+              <div className="col-md-4 py-3" key={index.toString()}>
+                <div className="card text-center">
+                  <div className="card-header">
                     <i className={it.icon}></i>
                   </div>
-                  <div class="card-body">
-                    <h5 class="card-title">{it.title}</h5>
-                    <p class="card-text">{it.description}</p>
-                    <a href="#" class="btn btn-primary">
+                  <div className="card-body">
+                    <h5 className="card-title">{it.title}</h5>
+                    <p className="card-text">{it.description}</p>
+                    <a href="#" className="btn btn-primary">
                       {it.btnName}
                     </a>
                   </div>

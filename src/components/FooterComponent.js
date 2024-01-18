@@ -6,7 +6,7 @@ const FooterComponent = () => {
       <div className="cs-footer__title">
         MyCurrencySwitcher | Copyright © 2024 -{" "}
         <a href="https://alfredom7.github.io/alfredomedinacv/" target="_blank">
-          Alfredo Medina <i class="fas fa-laptop-code"></i>
+          Alfredo Medina <i className="fas fa-laptop-code"></i>
         </a>
       </div>
     </div>
